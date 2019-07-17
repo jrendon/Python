@@ -11,11 +11,14 @@
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from getpass import getpass
 import time
 
 strUserName = 'name@email.com'
-strUserPass = 'PassWord!'
-strHashTag = 'HashtagName'
+# strUserPass = 'PassWord!' 
+strUserPass = getpass() # So the password isn't plain text but it's a choice now
+# strHashTag = 'HashtagName'
+strHashTag = input('HashTag? ')
 
 class TwitterBot:
     def __init__(self,username,password):
