@@ -9,10 +9,11 @@
     # Selenium (webdriver): Simply 'pip install selenium', this allows Python to install it for you.
 # ---------------------------------------------------------
 
+import time
+from getpass import getpass
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from getpass import getpass
-import time
 
 strUserName = 'name@email.com'
 # strUserPass = 'PassWord!' 
